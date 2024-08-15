@@ -60,7 +60,7 @@ Have the program start with 1 grid and 3 actors:
 
   * Cat (drawn blue)
   * Dog (drawn yellow)
-  * Bird (drawn green)
+  * Bird (drawn green)gio t
 
 You can place each of these three `Actor` objects in grid locations of your choosing.
 
