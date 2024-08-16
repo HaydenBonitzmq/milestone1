@@ -22,7 +22,7 @@ public class Main extends JFrame {
        Grid grid = new Grid();
        Point mousepos;
 
-
+      
        public Canvas() {
            setPreferredSize(new Dimension(720, 720));
            addMouseMotionListener(new MouseMotionListener() {
@@ -30,7 +30,7 @@ public class Main extends JFrame {
                public void mouseMoved(MouseEvent e) {
                    mousepos = e.getPoint();
                    repaint();
-                   //part1.Trail(mousepos);
+                   part1.Trail(mousepos);
                }
 
 
@@ -46,9 +46,9 @@ public class Main extends JFrame {
        @Override
        public void paint(Graphics g) {
            super.paint(g);
-           if (mousepos != null) {
-               part1.Trail(mousepos);
-           }
+        //    if (mousepos != null) {
+        //        part1.Trail(mousepos);
+        //    }
            grid.paint(g, mousepos);
            part1.CreateTrail(null, g);
        }
